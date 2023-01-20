@@ -13,7 +13,7 @@
       <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
       
       <guid>https://www.mattbird.dev/portfolio/ctf/</guid>
-      <description>&lt;p&gt;A team of AI able to efficently play a game of capture the flag against an enemy team.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Two teams of AI battle it out in a game of capture the flag against one another. These AI are built using a mix of decision trees and state machines to give them realistic and human like behaviors allowing for an immersive and challenging single player experience.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,25 +22,7 @@
       <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
       
       <guid>https://www.mattbird.dev/portfolio/wfc/</guid>
-      <description>&lt;p&gt;My implamentation of a the wave function collapse algorithm, able to generate random 2D game levels based on a pre-determined tile set.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Iskandar - Spear of Truth</title>
-      <link>https://www.mattbird.dev/portfolio/iskandar/</link>
-      <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
-      
-      <guid>https://www.mattbird.dev/portfolio/iskandar/</guid>
-      <description>&lt;p&gt;An exploration/puzzle game created and published by me and a small group of junior programmers and designers.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hypersomnia</title>
-      <link>https://www.mattbird.dev/portfolio/hypersomnia/</link>
-      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
-      
-      <guid>https://www.mattbird.dev/portfolio/hypersomnia/</guid>
-      <description>&lt;p&gt;An indie horror game created and published by me and a small team of junior programmers&lt;/p&gt;</description>
+      <description>&lt;p&gt;My implementation of the physics-based wave function collapse algorithm. This tool can create automated and random 2D game levels, based on a pre-determined tile set given by any user.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,7 +31,25 @@
       <pubDate>Sat, 05 Nov 2016 18:25:22 +0530</pubDate>
       
       <guid>https://www.mattbird.dev/portfolio/terraintool/</guid>
-      <description>&lt;p&gt;A Unity editor tool created to help developers design and implament endlessly generated terrain.&lt;/p&gt;</description>
+      <description>&lt;p&gt;An editor tool built in Unity Engine, designed to allow developers to effortlessly create custom and endlessly generating terrain systems for their games.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hypersomnia</title>
+      <link>https://www.mattbird.dev/portfolio/hypersomnia/</link>
+      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
+      
+      <guid>https://www.mattbird.dev/portfolio/hypersomnia/</guid>
+      <description>&lt;p&gt;An indie horror game created and published by me and a small team of junior programmers over a period of 2 months. Through out the duration of this project I was the lead AI programmer, managing a small team. Our responsibilities included creating the behaviors for the various adversaries faced throughout the game, alongside the implementation of other general gameplay programming tasks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Iskandar - The Spear of Truth</title>
+      <link>https://www.mattbird.dev/portfolio/iskandar/</link>
+      <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
+      
+      <guid>https://www.mattbird.dev/portfolio/iskandar/</guid>
+      <description>&lt;p&gt;An exploration/puzzle game created and published by me and a small group of junior programmers and designers. My main role in this project was programming the various boss encounters, a large majority of the game’s adversaries and implementation of general gameplay features.&lt;/p&gt;</description>
     </item>
     
   </channel>
