@@ -115,23 +115,18 @@
       <div class="content-column-content">
          <h1>Capture The Flag AI</h1>
          <p>Two teams of AI battle it out in a game of capture the flag against one another. These AI are built using a mix of decision trees and state machines to give them realistic and human like behaviors allowing for an immersive and challenging single player experience.</p>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-<ol>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
+<p>The idea for this project was that the AI could be used for any sort of combat game, either to fight against or alongside a player. The AI are able to make informed desicions based on the environment around them. Their capabilities include deciding when to attack enemies, when to try and collect the enemy flag, when to defend their own flag and when to pick up and utilise power-ups and health kits.</p>
 <blockquote>
-<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VGXPFw7RDAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><strong>The AI playing a game of capture the flag against eachother</strong></p>
 </blockquote>
-<h2 id="header-level-2">Header Level 2</h2>
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-<ul>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+<h3 id="behind-the-decision-trees">Behind the decision trees</h3>
+<p>This abstract base class is a template for each node on the tree. It stores information regarding the type of node (leaf/decision) and either performs an action or makes a decision depending on its type.
+<img src="/img/nodeclass.jpg" alt="node"></p>
+<p>The action and decision nodes are both subclasses of Node. The action node stores a reference to the AI agent and the action that needs to be executed when the node is reached. The decision node stores references two &lsquo;child&rsquo; nodes which it will decide between when it is called. Each node stores a reference to the node that comes after it in the tree, that way when the current node has been evaluated the tree moves on to the next node in the sequence straight away.
+<img src="/img/actionclass.jpg" alt="action"></p>
+<p>The actual tree works by assinging a root node as a place to start, then the tree is traversed each update until a leaf node is reached. The leaf node will trigger an action, then the process starts again.
+<img src="/img/treeclass.jpg" alt="tree"></p>
          
       </div>
     </div>
