@@ -19,7 +19,7 @@
     <item>
       <title>Wave Function Collapse Demo</title>
       <link>https://www.mattbird.dev/portfolio/wfc/</link>
-      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
       
       <guid>https://www.mattbird.dev/portfolio/wfc/</guid>
       <description>&lt;p&gt;My implementation of the physics-based wave function collapse algorithm. This tool can create automated and random 2D game levels, based on a pre-determined tile set given by any user.&lt;/p&gt;</description>
