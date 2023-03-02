@@ -63,24 +63,20 @@
   </a>
   
   
-  <a href="full%20profile%20url%20in%20linkedin" data-animate-hover="pulse" class="external" title="LinkedIn">
+  <a href="https://www.linkedin.com/in/matt-bird1?original_referer=" data-animate-hover="pulse" class="external" title="LinkedIn">
     <i class="fa fa-linkedin"></i>
   </a>
   
   
-  <a href="full%20profile%20url%20in%20instagram" title="" class="external instagram" title="Instagram">
+  <a href="https://www.instagram.com/maattbird/" title="" class="external instagram" title="Instagram">
     <i class="fa fa-instagram"></i>
   </a>
   
    
-  <a href="full%20profile%20url%20in%20github" data-animate-hover="pulse" class="external" title="GitHub">
+  <a href="https://github.com/MattBird73" data-animate-hover="pulse" class="external" title="GitHub">
     <i class="fa fa-github"></i>
   </a>
   
-  
-  <a href="full%20profile%20url%20in%20twitter" data-animate-hover="pulse" class="external twitter" title="Twitter">
-    <i class="fa fa-twitter"></i>
-  </a>
   
   
   
@@ -118,8 +114,8 @@
 <p>I got the idea for the project after finding this <a href="https://github.com/mxgmn/WaveFunctionCollapse#readme">GitHub post</a> by Maxim Gumin, talking the wave function collapse algorithm and how it can be used to generate random content. This sparked my interest in recreating the algorith in Unity, with the hope that one day I can use it to randomly generate levels for a 2D game of some sort.</p>
 <p><strong>Feel free to have a play around and try generating some maps for yourself!</strong></p>
 <blockquote>
-<iframe frameborder="0" src="https://itch.io/embed-upload/7401026?color=333333" allowfullscreen="" width="960" height="760"><a href="https://matt6.itch.io/wave-function-collapse">Play Wave Function Collapse on itch.io</a></iframe>
-<p>Here is the games <a href="https://matt6.itch.io/wave-function-collapse">Itch page</a></p>
+    <iframe frameborder="0" src="https://itch.io/embed-upload/7401026?color=333333" allowfullscreen="" width="960" height="760"><a href="https://matt6.itch.io/wave-function-collapse">Play Wave Function Collapse on itch.io</a></iframe>
+    <p>Here is the games <a href="https://matt6.itch.io/wave-function-collapse">Itch page</a></p>
 </blockquote>
 <h3 id="behind-the-scenes">Behind the scenes</h3>
 <p>In short, the application starts off by initialising an empty grid, then running through a constant loop of evaluate. propigate, collapse until each tile in the grid has been collapsed.</p>
@@ -130,7 +126,7 @@
 <p>Finally, after every cycle of evaluating and propagating, this function will find the object/objects in the grid with the lowest entropy value and pick one of them at random to collapse. The process then starts over.
 <img src="/img/wfccollapse.jpg" alt="wfcCollapse">
 On the left is how the lowest entropy tile is selected and then on the right is the code that decides what that tile will become</p>
-<p>There is one edge case where there are no possible connections and the object will be given an entropy value of 0. In this case there is no possible way of filling the tile, so the process has to resart from the begining. I have a few ideas of ideas ofhow I could avoid this issue, however for the purpose this was demo built it doesnt really matter if this happens. In future however, when I go to create a game around this system, I will attempt to make this improvement.</p>
+<p>With this current system, there is one edge case where there are no possible connections and the object will be given an entropy value of 0. In this case there is no possible way of filling the tile, so the process has to resart from the begining. I have a few ideas of ideas of how I could avoid this issue, however for demonstration purposes this doesnt really matter. In future however, when I go to create a game around this system, I will attempt to make this improvement.</p>
          
       </div>
     </div>

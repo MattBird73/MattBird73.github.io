@@ -63,24 +63,20 @@
   </a>
   
   
-  <a href="full%20profile%20url%20in%20linkedin" data-animate-hover="pulse" class="external" title="LinkedIn">
+  <a href="https://www.linkedin.com/in/matt-bird1?original_referer=" data-animate-hover="pulse" class="external" title="LinkedIn">
     <i class="fa fa-linkedin"></i>
   </a>
   
   
-  <a href="full%20profile%20url%20in%20instagram" title="" class="external instagram" title="Instagram">
+  <a href="https://www.instagram.com/maattbird/" title="" class="external instagram" title="Instagram">
     <i class="fa fa-instagram"></i>
   </a>
   
    
-  <a href="full%20profile%20url%20in%20github" data-animate-hover="pulse" class="external" title="GitHub">
+  <a href="https://github.com/MattBird73" data-animate-hover="pulse" class="external" title="GitHub">
     <i class="fa fa-github"></i>
   </a>
   
-  
-  <a href="full%20profile%20url%20in%20twitter" data-animate-hover="pulse" class="external twitter" title="Twitter">
-    <i class="fa fa-twitter"></i>
-  </a>
   
   
   
@@ -115,23 +111,24 @@
       <div class="content-column-content">
          <h1>Endless Terrain Generator</h1>
          <p>An editor tool built in Unity Engine, designed to allow developers to effortlessly create custom and endlessly generating terrain systems for their games.</p>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-<ol>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
-<blockquote>
-<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-</blockquote>
-<h2 id="header-level-2">Header Level 2</h2>
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-<ul>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-<li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+<p>This project is currently a work on progress that I have recently been developing in my free time. It is a little way from finished, but I&rsquo;ve decided to share the progress I have made so far and I will further update this page as I continue to work on it in the future.</p>
+<h4 id="progress-so-far">Progress So Far</h4>
+<p>Using Unity&rsquo;s built in perlin noise functionality, I am able generate customisable noise maps that can be layered and used to add texture to meshes. This was done by simply offsetting the Y value of each vertex position in the mesh, by the value generated with the noise map.</p>
+<p>Similarly, I can create simple block colour textures for these meshes using a similar concept. By assinging a colour to a height value I can check the hight of each vertex and give it a colour based on which height threshold it falls into. The result of these two first steps are detailed in the screenshots below.</p>
+<p>I have tried creating a few different environments to show off the range terrains this system can create.</p>
+<p><img src="/img/desert1.jpg" alt="gen1"></p>
+<p><img src="/img/grassland1.jpg" alt="gen2"></p>
+<p><img src="/img/islands1.jpg" alt="gen3"></p>
+<p><img src="/img/grasslands2.jpg" alt="gen4"></p>
+<p><img src="/img/desert2.jpg" alt="gen5"></p>
+<p><img src="/img/snow1.jpg" alt="gen6"></p>
+<p>To get the tiles rendering properly, the &lsquo;player&rsquo; object is constantly checking which tiles are within a radius around its self, then hiding/showing the necessary tiles, so that only tiles that are close enough to be seen are actually being rendered at any one time.</p>
+<p>Also, every tile stores 3 different versions of its mesh, each with varing detail. This way, the tiles that are close and within view of the player will swap out to the high detail meshes and the further tiles will use low detail meshes.</p>
+<p>Below is a quick demonstration of this in action. You can see the wireframes of the meshes changing as they are swapped for lower detail ones.</p>
+<p><img src="/img/TileRendering.gif" alt="rendereringgif"></p>
+<p>At this current moment in time, both the terrain generation and the tile rendering dont work too well together. Attempting to calculate the all of the mesh variations, noise maps, colour maps and handle the tile rendering at the same time leaves me with a big perfomance issue.</p>
+<p>The common solution to get around this problem is multi-threading, as I can have the rendering happen on the main thread and the terrain generation happening on a seprate thread. However this project is going to be my first experience with threading, meaning that I am learning from scratch.</p>
+<p>I will update this page with further when I have implemented some sort of threading, and both the tile rendering and mesh creation processes can run side by side efficiently.</p>
          
       </div>
     </div>
